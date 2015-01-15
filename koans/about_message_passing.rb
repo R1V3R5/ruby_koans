@@ -24,7 +24,7 @@ class AboutMessagePassing < Neo::Koan
     mc = MessageCatcher.new
 
     assert mc.send("caught?")
-    assert mc.send("caught" + __ )    # What do you need to add to the first string?
+    assert mc.send("caught" + mc )    # What do you need to add to the first string?
     assert mc.send("CAUGHT?".____ )      # What would you need to do to the string?
   end
 
